@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Home from "./pages/Home.jsx";
-import About from "./pages/About.jsx";
-import Product from "./pages/Product.jsx";
-import Detail from "./pages/Detail.jsx";
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Product from "./pages/Product";
+import Detail from "./pages/Detail";
 import NotFound from "./components/notFound.js";
 
 const App = () => {
