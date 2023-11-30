@@ -1,6 +1,6 @@
 {
-  "homepage": "https://alwan9.github.io/toko-react",
   "name": "store",
+  "homepage": "https://alwan9.github.io/store",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

@@ -14,19 +14,16 @@ function Navbar() {
           </a>
         </div>
         <div className="">
-          <a href="/" className="hover:text-indigo-600 px-5 duration-300">
+          <a href="store/" className="hover:text-indigo-600 px-5 duration-300">
             Home
           </a>
           <a
-            href="/Product.jsx"
+            href="/Product"
             className="hover:text-indigo-600 mx-5 duration-300"
           >
             Product
           </a>
-          <a
-            href="/About.jsx"
-            className="hover:text-indigo-600 mx-5 duration-300"
-          >
+          <a href="/About" className="hover:text-indigo-600 mx-5 duration-300">
             About
           </a>
         </div>
