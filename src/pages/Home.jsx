@@ -16,7 +16,6 @@ import laptop6 from "./../img/product/laptop/ROG Zephyrus G14 GA401.png";
 import Navbar from "../components/navbar";
 import Card from "../components/card";
 import Footer from "../components/footer";
-
 import Button from "../components/button";
 
 function Home(params) {
