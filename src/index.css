@@ -28,6 +28,15 @@ code {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
+.bg-blur-card1 {
+  background: rgba(255, 255, 255, 0.04);
+
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
 .bg-card {
   background: rgba(255, 255, 255, 0.257);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -65,4 +74,42 @@ header {
 ::-webkit-scrollbar-thumb:hover {
   background: #2b185d;
   animation-duration: 200ms;
+}
+
+/* ================================================== */
+/* ================================================== */
+/* ================================================== */
+/* ================================================== */
+/* kategori */
+
+.bg-fan {
+  background-image: url(./img/product/cooler/ROG\ Strix\ LC360\ Liquid\ CPU\ Processor\ Cooler.png);
+}
+
+.bg-mothearboard {
+  background-image: url(./img/product/motherboard/ROG\ Maximus\ Xi\ Hero\ z390.png);
+}
+
+.bg-laptop {
+  background-image: url(./img/product/laptop/ROG\ Strix\ G15\ G512\ G512LW.png);
+}
+.bg-headphone {
+  background-image: url(./img/product/headphone/ROG\ Delta.png);
+}
+.bg-monitor {
+  background-image: url(./img/product/monitor/ASUS\ ROG\ Strix\ XGVQ.png);
+}
+
+.bg-case {
+  background-image: url(./img/product/case/ROG\ Strix\ GL10CS.png);
+}
+
+.bg-mouse {
+  background-image: url(./img/product/mouse/ROG\ Pugio.png);
+}
+
+.bg-kategori {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }

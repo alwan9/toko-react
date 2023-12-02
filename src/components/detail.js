@@ -1,5 +1,4 @@
 import Card from "./card";
-import Produk1 from "../img/produk/laptop1.png";
 
 export default function Detail(props) {
   return (
@@ -41,37 +40,7 @@ export default function Detail(props) {
         rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi
         convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
       </div>
-      <div className="text-right mt-20 px-20">More ➜ </div>
-      <div className="grid-cols-4 gap-x-10 grid  items-center px-10 mt-5 mb-20 ">
-        <Card
-          alamat={Produk1}
-          judul="ROG Flow X16 GV601RE"
-          deskripsi="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        <Card
-          alamat={Produk1}
-          judul="ROG Flow X16 GV601RE"
-          deskripsi="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        <Card
-          alamat={Produk1}
-          judul="ROG Flow X16 GV601RE"
-          deskripsi="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        <Card
-          alamat={Produk1}
-          judul="ROG Flow X16 GV601RE"
-          deskripsi="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-      </div>
+
       <footer />
     </>
   );
