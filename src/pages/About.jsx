@@ -1,12 +1,12 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "../components/navbar";
-import Comment from "../components/comment";
-import rog from "../img/rog.png";
-import k1 from "../img/card.png";
-import k2 from "../img/jamin.png";
-import k3 from "../img/box.png";
-import k4 from "../img/pengiriman.png";
+import Navbar from "./../components/navbar";
+import Comment from "./../components/comment";
+import rog from "./../img/rog.png";
+import k1 from "./../img/card.png";
+import k2 from "./../img/jamin.png";
+import k3 from "./../img/box.png";
+import k4 from "./../img/pengiriman.png";
 
 export default function About() {
   return (

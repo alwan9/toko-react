@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import Navbar from "../components/navbar";
-import Judul from "../img/judul1.png";
-import Card from "../components/card";
-import Footer from "../components/footer";
-import data_product from "../assets/data";
+import Navbar from "./../components/navbar";
+import Judul from "./../img/judul1.png";
+import Card from "./../components/card";
+import Footer from "./../components/footer";
+import data_product from "./../assets/data";
 
 export default function Produk() {
   const [searchTerm, setSearchTerm] = useState("");

@@ -1,4 +1,4 @@
-import NotFound from "../components/notFound";
+import NotFound from "./../components/notFound";
 
 function notFound() {
   return (

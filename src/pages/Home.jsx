@@ -3,7 +3,7 @@ import Laptop from "./../img/header1.png";
 import Judul from "./../img/header2.png";
 import { Icon } from "@iconify/react";
 import banner from "./../img/banner.png";
-import data_product from "../assets/data";
+import data_product from "./../assets/data";
 // laptop
 import laptop1 from "./../img/product/laptop/ROG Flow X13 GV301RE.png";
 import laptop2 from "./../img/product/laptop/ROG Zephyrus Duo 16 GX650RM.png";
@@ -13,10 +13,10 @@ import laptop5 from "./../img/product/laptop/ROG Zephyrus Duo 15 SE GX551QM.png"
 import laptop6 from "./../img/product/laptop/ROG Zephyrus G14 GA401.png";
 
 // components
-import Navbar from "../components/navbar";
-import Card from "../components/card";
-import Footer from "../components/footer";
-import Button from "../components/button";
+import Navbar from "./../components/navbar";
+import Card from "./../components/card";
+import Footer from "./../components/footer";
+import Button from "./../components/button";
 
 function Home(params) {
   return (
