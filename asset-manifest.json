@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/store/static/css/main.987de10a.css",
-    "main.js": "/store/static/js/main.38a066c5.js",
+    "main.css": "/store/static/css/main.d3def0f2.css",
+    "main.js": "/store/static/js/main.5e01d262.js",
     "static/js/787.092224b8.chunk.js": "/store/static/js/787.092224b8.chunk.js",
     "static/media/bg.png": "/store/static/media/bg.24dea602eb85d0d8b324.png",
     "static/media/header1.png": "/store/static/media/header1.5eccb086808099e4ac11.png",
@@ -12,6 +12,7 @@
     "static/media/ASUS ROG SWIFT 4K OLED GAMING MONITOR.png": "/store/static/media/ASUS ROG SWIFT 4K OLED GAMING MONITOR.bb8b1c3324215c08c286.png",
     "static/media/jamin.png": "/store/static/media/jamin.191eb62200ff8925f367.png",
     "static/media/ROG STRIX B460-H GAMING.png": "/store/static/media/ROG STRIX B460-H GAMING.af2856394b5b77fbcecb.png",
+    "static/media/error.png": "/store/static/media/error.95361c1e03058f973f12.png",
     "static/media/ROG STRIX LC II 280 ARGB Fan  (2).png": "/store/static/media/ROG STRIX LC II 280 ARGB Fan  (2).4ccebe881743047a66b5.png",
     "static/media/ASUS ROG Strix XG9Q.png": "/store/static/media/ASUS ROG Strix XG9Q.875c87d82a78e5012ea4.png",
     "static/media/ROG Zephyrus Duo 16 GX650RM.png": "/store/static/media/ROG Zephyrus Duo 16 GX650RM.9b9980a545fbf4db405b.png",
@@ -57,12 +58,12 @@
     "static/media/close.svg": "/store/static/media/close.1924c247fc6c6370306e60e2ac8a7103.svg",
     "index.html": "/store/index.html",
     "static/media/burger.svg": "/store/static/media/burger.ab1dfb3bb5a17affa8b0a1bb03ad74f1.svg",
-    "main.987de10a.css.map": "/store/static/css/main.987de10a.css.map",
-    "main.38a066c5.js.map": "/store/static/js/main.38a066c5.js.map",
+    "main.d3def0f2.css.map": "/store/static/css/main.d3def0f2.css.map",
+    "main.5e01d262.js.map": "/store/static/js/main.5e01d262.js.map",
     "787.092224b8.chunk.js.map": "/store/static/js/787.092224b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.987de10a.css",
-    "static/js/main.38a066c5.js"
+    "static/css/main.d3def0f2.css",
+    "static/js/main.5e01d262.js"
   ]
 }
