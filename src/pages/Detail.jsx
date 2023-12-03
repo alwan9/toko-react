@@ -18,10 +18,16 @@ export default function detail() {
       <Navbar />
       <Detail judul="" harga="" deskripsi="" />
 
-      <div className="flex items-center justify-between px-20 mt-20 mb-16">
-        <div className="text-6xl font-bold">Produk Serupa</div>
-        <a href="./Product">
-          <div className="text-right text-2xl">More ➜ </div>
+      <div className="lg:flex px-7 pr-24 md:px-20 mt-[10%] justify-between items-center my-20">
+        <h3 className="font-bold text-3xl md:text-5xl">
+          Produk Serupa
+          <br />
+        </h3>
+        <a
+          href="#"
+          className="hidden md:block text-2xl hover:text-indigo-700 duration-200"
+        >
+          more ➜
         </a>
       </div>
       <div className="grid-cols-5 gap-x-10 grid  items-center px-10 mt-5 mb-20 ">

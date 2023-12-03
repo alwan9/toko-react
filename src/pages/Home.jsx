@@ -1,16 +1,8 @@
 // gambar
 import Laptop from "./../img/header1.png";
 import Judul from "./../img/header2.png";
-import { Icon } from "@iconify/react";
 import banner from "./../img/banner.png";
 import data_product from "./../assets/data";
-// laptop
-import laptop1 from "./../img/product/laptop/ROG Flow X13 GV301RE.png";
-import laptop2 from "./../img/product/laptop/ROG Zephyrus Duo 16 GX650RM.png";
-import laptop3 from "./../img/product/laptop/ROG Strix G15 G512 G512LW.png";
-import laptop4 from "./../img/product/laptop/ROG Strix G16 2023 G614JV.png";
-import laptop5 from "./../img/product/laptop/ROG Zephyrus Duo 15 SE GX551QM.png";
-import laptop6 from "./../img/product/laptop/ROG Zephyrus G14 GA401.png";
 
 // components
 import Navbar from "./../components/navbar";
@@ -19,6 +11,13 @@ import Footer from "./../components/footer";
 import Button from "./../components/button";
 
 function Home(params) {
+  const partialData1 = data_product.slice(0, 5);
+  const partialData2 = data_product.slice(5, 15);
+
+  // const handleDetail = (id) => {
+  //   this.props.history.push(`/Detail/${id}`);
+  // };
+
   return (
     <>
       <Navbar />
@@ -35,12 +34,12 @@ function Home(params) {
       </header>
 
       {/*  */}
-      <div className="lg:flex px-7 md:px-20 mt-[10%] justify-between items-center my-20">
-        <h3 className="font-bold text-5xl">
-          Produk teratas
+      <div className="lg:flex px-7 pr-24 md:px-20 mt-[10%] justify-between items-center my-20">
+        <h3 className="font-bold text-3xl md:text-5xl">
+          Produk Teratas
           <br />
-          <span className="text-2xl font-light ">
-            Produk yang kami rekomendasikan untuk anad
+          <span className="text-xl  md:text-2xl font-light ">
+            Produk yang kami rekomendasikan
           </span>
         </h3>
         <a
@@ -51,68 +50,29 @@ function Home(params) {
         </a>
       </div>
 
-      <div className="flex overflow-x-auto gap-x-5 w-[90%] ml-[5%] rounded-xl  py-5 md1:py-16   ">
-        <Icon
-          className="absolute z-[55] right-5 opacity-30"
-          icon="teenyicons:right-outline"
-          width="66"
-          height="400"
-        />
-
-        {/* produk1 */}
-        <Card
-          image={laptop1}
-          name="ROG Flow X16 GV601RE"
-          des="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        {/* produk1 */}
-        <Card
-          image={laptop2}
-          name="ROG Flow X16 GV601RE"
-          des="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        {/* produk1 */}
-        <Card
-          image={laptop3}
-          name="ROG Flow X16 GV601RE"
-          des="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        {/* produk2 */}
-        <Card
-          image={laptop4}
-          name="ROG Flow X16 GV601RE"
-          des="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        {/* produk2 */}
-        <Card
-          image={laptop5}
-          name="ROG Flow X16 GV601RE"
-          des="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        {/* produk2 */}
-        <Card
-          image={laptop6}
-          name="ROG Flow X16 GV601RE"
-          des="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
+      <div
+        id="searchList"
+        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  px-5  md:px-10 gap-x-2 lg:gap-x-10 gap-y-3 lg:gap-y-16 mt-5 md:mt-36"
+      >
+        {partialData1.map((Item, i) => {
+          return (
+            <Card
+              // goDetail={this.handleDetail}
+              key={i}
+              id={Item.id}
+              name={Item.name}
+              des={Item.des}
+              image={Item.image}
+              harga={Item.harga}
+            />
+          );
+        })}
       </div>
-      <div className="lg:flex px-7 md:px-20 mt-[10%] justify-between items-center my-20">
-        <h3 className="font-bold text-5xl">
+      <div className="lg:flex px-7 pr-24 md:px-20 mt-[10%] justify-between items-center my-20">
+        <h3 className="font-bold text-3xl md:text-5xl">
           Produk Unggulan
           <br />
-          <span className="text-2xl font-light ">
+          <span className="text-xl  md:text-2xl font-light">
             Produk unggulan yang telah dibeli lebih dari 400 pengguna
           </span>
         </h3>
@@ -127,10 +87,10 @@ Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
         id="searchList"
         className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  px-5  md:px-10 gap-x-2 lg:gap-x-10 gap-y-3 lg:gap-y-16 mt-20 md:mt-36"
       >
-        {data_product.map((Item, i) => {
+        {partialData2.map((Item, i) => {
           return (
             <Card
-              key={4}
+              key={i}
               id={Item.id}
               name={Item.name}
               des={Item.des}

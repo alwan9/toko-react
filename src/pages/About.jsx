@@ -35,29 +35,29 @@ export default function About() {
           allowfullscreen
         ></iframe>
       </div>
-      <div className="text-center text-xl lg:text-6xl">
+      <div className="text-center font-bold px-16  text-3xl lg:text-6xl">
         Terimakasih & Selamat menikmati
       </div>
-      <div className="grid gap-5 lg:gap-10 px-20 lg:px-32 grid-cols-2 mt-20 lg:grid-cols-4 items-center   text-center">
-        <div className="bg-blur py-7 w-[100%] h-[100%] px-10 lg:px-16 mt-5  ">
-          <img className="w-[100%] px-[2%]  " src={k1} />
-          <div className=" text-2xl mt-10 ">Pembayaran yang mudah dan aman</div>
+      <div className="grid gap-5 lg:gap-10 text-base md:text-2xl px-5 md:px-20 lg:px-32 grid-cols-2 mt-20 lg:grid-cols-4 items-center  text-center">
+        <div className="bg-blur py-5 md:py-7 w-[100%] h-[100%] px-5 md:px-10 lg:px-16 mt-5  ">
+          <img className="w-[100%] px-4 md:px-[2%]  " src={k1} />
+          <div className=" mt-2 md:mt-10 ">Pembayaran yang mudah dan aman</div>
         </div>
-        <div className="bg-blur py-7 w-[100%] h-[100%] px-10 lg:px-16 mt-5  ">
-          <img className="w-[100%] px-[2%]  " src={k2} />
-          <div className=" text-2xl mt-10 ">
+        <div className="bg-blur py-5 md:py-7 w-[100%] h-[100%] px-5 md:px-10 lg:px-16 mt-5  ">
+          <img className="w-[100%] px-4 md:px-[2%]  " src={k2} />
+          <div className=" mt-2 md:mt-10 ">
             produk yang kami jual 100% produk asli
           </div>
         </div>
-        <div className="bg-blur py-7 w-[100%] h-[100%] px-10 lg:px-16 mt-5  ">
-          <img className="w-[100%] px-[2%]  " src={k3} />
-          <div className=" text-2xl mt-10 ">
+        <div className="bg-blur py-5 md:py-7 w-[100%] h-[100%] px-5 md:px-10 lg:px-16 mt-5  ">
+          <img className="w-[100%] px-4 md:px-[2%]  " src={k3} />
+          <div className=" mt-2 md:mt-10 ">
             Packing yang rapi dan aman sampai tujuan
           </div>
         </div>
-        <div className="bg-blur py-7 w-[100%] h-[100%] px-10 lg:px-16 mt-5  ">
-          <img className="w-[100%] px-[2%]  " src={k4} />
-          <div className=" text-2xl mt-10 ">Proses pengiriman yang cepat</div>
+        <div className="bg-blur py-5 md:py-7 w-[100%] h-[100%] px-5 md:px-10 lg:px-16 mt-5  ">
+          <img className="w-[100%] px-4 md:px-[2%]  " src={k4} />
+          <div className=" mt-2 md:mt-10 ">Proses pengiriman yang cepat</div>
         </div>
       </div>
       <Comment />

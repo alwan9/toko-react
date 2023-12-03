@@ -1,17 +1,25 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Card = (props) => {
   return (
-    <div className="Item  bg-card rounded-tl-3xl rounded-br-3xl w-[100%]  md-[200px] min-w-[170px] md:min-w-[200px]  lg:min-w-[310px]   hover:scale-105 duration-200">
+    <div
+      onClick={() => props.goDetail(props.data.id)}
+      className="Item  bg-card rounded-tl-3xl rounded-br-3xl w-[100%]  md-[200px] min-w-[170px] md:min-w-[200px]  lg:min-w-[310px]   hover:scale-105 duration-200"
+    >
       <div className="Item bg-blur-card1 md:pt-10 pb-7  rounded-tl-3xl rounded-br-3xl">
         <a href="#">
           <img
-            class="rounded-tl-3xl p-4 lg:px-10 w-full  "
+            class="rounded-tl-3xl relative  p-4 lg:px-10 w-full  z-[55]"
             src={props.image}
             alt="produk"
           />
         </a>
+        <div className="grid place-items-center">
+          <div className="bg-zinc-200 blur-2xl z-[44] opacity-50 top-6 absolute  rounded-full w-[75%] flex justify-center h-[75%]"></div>
+        </div>
       </div>
+
       <div class="px-1 p-5 md:px-3 pt-5">
         <a href="#">
           <h5 class="mb-2  text-base md:text-3xl font-bold tracking-tight text-gray-900 dark:text-white">

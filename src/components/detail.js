@@ -3,20 +3,24 @@ import Card from "./card";
 export default function Detail(props) {
   return (
     <>
-      <div className="p-20 flex items-center">
-        <div className="w-[700px] h-[400px] bg-zinc-800"></div>
-        <div className="pl-20">
-          <div className="text-5xl font-bold">ROG Flow X16 GV601RE</div>
+      <div className="lg:p-20 grid lg:grid-cols-2 items-center">
+        <div className="w-[100%] h-[400px] bg-zinc-800">
+          <img src="" />
+        </div>
+        <div className="lg:pl-20 px-7">
+          <h3 className="text-3xl mt-10 lg:mt-0 text-center lg:text-left lg:text-5xl font-bold">
+            ROG Flow X16 GV601RE
+          </h3>
           <button
             class="w-[100%] h-[70px] text-2xl text-center border-[1px] duration-300 border-transparent hover:bg-transparent hover:border-white
-            bg-zinc-600 px-36  mt-10"
+              bg-zinc-600   mt-10"
             href="#"
           >
             Buy $1300
           </button>
           <button
             class="w-[100%] h-[70px] text-2xl text-center border-[1px] duration-300 hover:border-transparent hover:bg-zinc-600
-             px-36  mt-5"
+                mt-5"
             href="#"
           >
             + Keranjang
@@ -24,7 +28,7 @@ export default function Detail(props) {
         </div>
       </div>
 
-      <div className="px-20 text-2xl">
+      <p className="px-7 lg:px-20 mt-10 lg:mt-0 text-base md:text-2xl">
         Qorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis
         molestie, dictum est a, mattis tellus. Sed dignissim, metus nec
         fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus
@@ -39,7 +43,7 @@ export default function Detail(props) {
         ac scelerisque ante pulvinar. Donec ut rhoncus ex. Suspendisse ac
         rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi
         convallis convallis diam sit amet lacinia. Aliquam in elementum tellus.
-      </div>
+      </p>
 
       <footer />
     </>
