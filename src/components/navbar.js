@@ -140,6 +140,9 @@ function Navbar() {
           >
             About
           </Link>
+          <div className="font-light text-center absolute bottom-0 my-10  flex">
+            UI/UX and Front end by <span className="font-bold"> Alwan </span>
+          </div>
           {/* Add other links as needed */}
         </div>
       )}
