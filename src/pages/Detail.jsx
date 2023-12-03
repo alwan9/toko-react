@@ -2,17 +2,11 @@ import React from "react";
 import Navbar from "./../components/navbar";
 import Card from "./../components/card";
 import Detail from "./../components/detail";
-import produk1 from "./../img/product/laptop/ROG Flow X13 GV302XI-R947G6T-O.png";
-import produk2 from "./../img/product/laptop/ROG Strix G15 G512 G512LW.png";
-import produk3 from "./../img/product/laptop/ROG Zephyrus Duo 15 SE GX551QM.png";
-import produk4 from "./../img/product/laptop/ROG Zephyrus G14 GA401.png";
-import produk5 from "./../img/product/laptop/ROG Flow X13 GV301RE.png";
-import produk6 from "./../img/product/monitor/ASUS ROG Strix XGUQ.png";
-import produk7 from "./../img/product/motherboard/ROG MAXIMUS Z690 HERO.png";
-import produk8 from "./../img/product/motherboard/ROG STRIX B760-F GAMING WIFI Intel B760 LGA 1700 ATX Motherboard.png";
-import produk9 from "./../img/product/motherboard/ROG Maximus Xi Hero z390.png";
+import data_product from "../assets/data";
 
 export default function detail() {
+  const partialData1 = data_product.slice(0, 5);
+  const partialData2 = data_product.slice(20, 25);
   return (
     <>
       <Navbar />
@@ -30,79 +24,53 @@ export default function detail() {
           more ➜
         </a>
       </div>
-      <div className="grid-cols-5 gap-x-10 grid  items-center px-10 mt-5 mb-20 ">
-        <Card
-          alamat={produk1}
-          judul="ROG Flow X16 GV601RE"
-          deskripsi="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        <Card
-          alamat={produk6}
-          judul="ROG Flow X16 GV601RE"
-          deskripsi="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        <Card
-          alamat={produk3}
-          judul="ROG Flow X16 GV601RE"
-          deskripsi="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        <Card
-          alamat={produk4}
-          judul="ROG Flow X16 GV601RE"
-          deskripsi="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        <Card
-          alamat={produk5}
-          judul="ROG Flow X16 GV601RE"
-          deskripsi="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
+      <div
+        id="searchList"
+        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  px-5  md:px-10 gap-x-2 lg:gap-x-10 gap-y-3 lg:gap-y-16 mt-5 md:mt-36"
+      >
+        {partialData1.map((Item, i) => {
+          return (
+            <Card
+              // goDetail={this.handleDetail}
+              key={i}
+              id={Item.id}
+              name={Item.name}
+              des={Item.des}
+              image={Item.image}
+              harga={Item.harga}
+            />
+          );
+        })}
       </div>
-      <div className="grid-cols-5 gap-x-10 grid  items-center px-10 mt-5 mb-20 ">
-        <Card
-          alamat={produk8}
-          judul="ROG Flow X16 GV601RE"
-          deskripsi="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        <Card
-          alamat={produk2}
-          judul="ROG Flow X16 GV601RE"
-          deskripsi="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        <Card
-          alamat={produk9}
-          judul="ROG Flow X16 GV601RE"
-          deskripsi="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        <Card
-          alamat={produk4}
-          judul="ROG Flow X16 GV601RE"
-          deskripsi="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
-        <Card
-          alamat={produk7}
-          judul="ROG Flow X16 GV601RE"
-          deskripsi="
-Laptop ROG menampilkan spesifikasi premium dengan prosesor canggih"
-          harga="USD.1102$"
-        />
+      <div className="lg:flex px-7 pr-24 md:px-20 mt-[10%] justify-between items-center my-20">
+        <h3 className="font-bold text-3xl md:text-5xl">
+          Produk Serupa
+          <br />
+        </h3>
+        <a
+          href="#"
+          className="hidden md:block text-2xl hover:text-indigo-700 duration-200"
+        >
+          more ➜
+        </a>
+      </div>
+      <div
+        id="searchList"
+        className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5  px-5  md:px-10 gap-x-2 lg:gap-x-10 gap-y-3 lg:gap-y-16 mt-5 md:mt-36"
+      >
+        {partialData2.map((Item, i) => {
+          return (
+            <Card
+              // goDetail={this.handleDetail}
+              key={i}
+              id={Item.id}
+              name={Item.name}
+              des={Item.des}
+              image={Item.image}
+              harga={Item.harga}
+            />
+          );
+        })}
       </div>
     </>
   );

@@ -30,11 +30,19 @@ code {
 
 .bg-blur-card1 {
   background: rgba(255, 255, 255, 0.04);
-
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.bg-nav {
+  background: rgba(27, 27, 27, 0.795);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.2px);
+  -webkit-backdrop-filter: blur(8.2px);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-bottom: 1px solid rgb(82, 82, 82);
 }
 
 .bg-card {

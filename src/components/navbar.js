@@ -20,8 +20,8 @@ function Navbar() {
   };
 
   return (
-    <div>
-      <nav className="header sticky top-0  shadow-md flex items-center justify-between px-8 py-5">
+    <>
+      <nav className="bg-nav z-[99] shadow-2xl header sticky top-0   flex items-center justify-between px-8 py-5">
         {/* Left section - Logo */}
         <div className="w-3/12 ">
           <Link className="flex items-center" to="/">
@@ -146,7 +146,7 @@ function Navbar() {
           {/* Add other links as needed */}
         </div>
       )}
-    </div>
+    </>
   );
 }
 
