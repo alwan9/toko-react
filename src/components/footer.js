@@ -2,7 +2,7 @@ import React from "react";
 import { Icon } from "@iconify/react";
 import Logo from "./../img/awh.png";
 
-function Footer(props) {
+export default function Footer(props) {
   return (
     <>
       <footer className="w-full h-[300px]  mt-[10%] bg-zinc-800 px-7 md:px-20 py-10">
@@ -26,5 +26,3 @@ function Footer(props) {
     </>
   );
 }
-
-export default Footer;

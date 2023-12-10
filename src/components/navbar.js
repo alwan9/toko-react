@@ -6,7 +6,7 @@ import Keranjang from "./../img/keranjang.png";
 import CloseIcon from "./../img/close.svg";
 import Cari from "./../img/search.png";
 
-function Navbar() {
+export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const navigate = useNavigate();
 
@@ -24,7 +24,11 @@ function Navbar() {
       <nav className="bg-nav z-[99] shadow-2xl header sticky top-0   flex items-center justify-between px-8 py-5">
         {/* Left section - Logo */}
         <div className="w-3/12 ">
-          <Link className="flex items-center" to="/">
+          <Link
+            className="flex items-center"
+            to="/store"
+            onClick={() => handleNavLinkClick("/store")}
+          >
             <img src={Logo} alt="Logo" className="h-[25px] md:h-[30px] mr-3" />
             <div className="ml-2 font-light flex">
               Asus <span className="font-bold"> Store</span>
@@ -71,22 +75,24 @@ function Navbar() {
               src={Cari}
               alt="search"
             />
-            <img
-              className="w-[25px] cursor-pointer"
-              src={Keranjang}
-              alt="cart"
-            />
+            <Link to="/Cart">
+              <img
+                className="w-[25px] cursor-pointer"
+                src={Keranjang}
+                alt="cart"
+              />
+            </Link>
           </div>
 
           {/* Burger/Close Icon */}
           <div className="relative">
-            <a href="#" onClick={handleMenuClick}>
+            <Link onClick={handleMenuClick}>
               <img
                 src={menuOpen ? CloseIcon : BurgerIcon}
                 alt="Menu"
                 className="h-8 p-1  block md:hidden hover:text-green-500 duration-200"
               />
-            </a>
+            </Link>
             {menuOpen && (
               <img
                 src={BurgerIcon}
@@ -140,6 +146,19 @@ function Navbar() {
           >
             About
           </Link>
+          <div className="w-[100%] h-[3px] bg-zinc-700 my-10"></div>
+          <Link
+            to="/Cart"
+            className="py-2 hover:text-indigo-600  duration-300 flex"
+            onClick={() => handleNavLinkClick("/Cart")}
+          >
+            Keranjang
+            <img
+              className="w-[25px] mx-5 cursor-pointer"
+              src={Keranjang}
+              alt="cart"
+            />
+          </Link>
           <div className="font-light text-center absolute bottom-0 my-10  flex">
             UI/UX and Front end by <span className="font-bold"> Alwan </span>
           </div>
@@ -149,5 +168,3 @@ function Navbar() {
     </>
   );
 }
-
-export default Navbar;

@@ -5,23 +5,27 @@ import banner from "./../img/banner.png";
 import data_product from "./../assets/data";
 
 // components
-import Navbar from "./../components/navbar";
-import Card from "./../components/card";
-import Footer from "./../components/footer";
-import Button from "./../components/button";
 
-function Home(params) {
+import { Link, useNavigate } from "react-router-dom";
+import Navbar from "./../components/Navbar";
+import Card from "./../components/Card";
+import Footer from "./../components/Footer";
+import Button from "./../components/Button";
+import Top from "../components/Btn-to-top";
+
+export default function Home() {
   const partialData1 = data_product.slice(0, 5);
   const partialData2 = data_product.slice(5, 15);
+  const navigate = useNavigate();
 
-  // const handleDetail = (id) => {
-  //   this.props.history.push(`/Detail/${id}`);
-  // };
+  const handleDetail = (id) => {
+    navigate(`/Detail/${id}`);
+  };
 
   return (
     <>
       <Navbar />
-      <header className="pt-[20%] md:pt-[10%] ">
+      <header id="top" className="pt-[20%] md:pt-[10%] ">
         <div className="md:flex items-center">
           <img src={Laptop} className="w-[85%] md:w-[35%] " />
           <div className="ml-[7%]">
@@ -31,6 +35,7 @@ function Home(params) {
             </div>
           </div>
         </div>
+        <Top />
       </header>
 
       {/*  */}
@@ -42,12 +47,12 @@ function Home(params) {
             Produk yang kami rekomendasikan
           </span>
         </h3>
-        <a
-          href="#"
+        <Link
+          to="./../Product"
           className="hidden md:block text-2xl hover:text-indigo-700 duration-200"
         >
           more ➜
-        </a>
+        </Link>
       </div>
 
       <div
@@ -57,11 +62,11 @@ function Home(params) {
         {partialData1.map((Item, i) => {
           return (
             <Card
-              // goDetail={this.handleDetail}
+              goDetail={handleDetail}
               key={i}
               id={Item.id}
               name={Item.name}
-              des={Item.des}
+              des1={Item.des1}
               image={Item.image}
               harga={Item.harga}
             />
@@ -76,12 +81,12 @@ function Home(params) {
             Produk unggulan yang telah dibeli lebih dari 400 pengguna
           </span>
         </h3>
-        <a
-          href="#"
+        <Link
+          to="./../Product"
           className="hidden md:block text-2xl hover:text-indigo-700 duration-200"
         >
           more ➜
-        </a>
+        </Link>
       </div>
       <div
         id="searchList"
@@ -90,10 +95,11 @@ function Home(params) {
         {partialData2.map((Item, i) => {
           return (
             <Card
+              goDetail={handleDetail}
               key={i}
               id={Item.id}
               name={Item.name}
-              des={Item.des}
+              des1={Item.des1}
               image={Item.image}
               harga={Item.harga}
             />
@@ -150,5 +156,3 @@ function Home(params) {
     </>
   );
 }
-
-export default Home;
