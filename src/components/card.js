@@ -1,11 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Like from "./../img/solar_heart-white.png";
 
 export default function Card(props) {
   return (
     <>
       <div className="Item bg-card rounded-tl-3xl rounded-br-3xl w-[100%]  md-[200px] min-w-[170px] md:min-w-[200px]  lg:min-w-[310px]   hover:scale-105 duration-200">
         <div className="Item bg-blur-card1 md:pt-10 pb-7  rounded-tl-3xl rounded-br-3xl">
+          {/* <img className="w-[25%] md:w-[16%]   md:p-1 px-3 " src={Like} /> */}
           <Link>
             <img
               class="rounded-tl-3xl relative  p-4 lg:px-10 w-full  z-[55]"

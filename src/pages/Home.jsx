@@ -29,10 +29,11 @@ export default function Home() {
         <div className="md:flex items-center">
           <img src={Laptop} className="w-[85%] md:w-[35%] " />
           <div className="ml-[7%]">
-            <img src={Judul} className="mt-20 md1:mt-0  w-[80%] md1:w-[50%]" />
-            <div className=" text-2xl md:text-3xl font-ligh lg:text-5xl mt-5 w-[80%]">
-              Worem ipsum dolor sit amet, consectetur adipiscing elit.
-            </div>
+            <img src={Judul} className="w-[75%] md1:w-[50%] mt-16 md:mt-0" />
+            <h1 className=" text-2xl md:text-3xl font-light lg:text-2xl mt-5 w-[80%]">
+              ASUS ROG menghadirkan kombinasi luar biasa antara performa tinggi
+              dan desain inovatif dalam dunia gaming.
+            </h1>
           </div>
         </div>
         <Top />

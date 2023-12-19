@@ -36,14 +36,14 @@ export default function DetailPage() {
           </h3>
           <div className="">
             <button
-              class="w-[100%] rounded-lg h-[70px] text-2xl text-center border-[1px] duration-300 border-transparent  border-zinc-600 md:border-zinc-700 hover:bg-indigo-600
+              class="w-[100%] rounded-lg h-[50px] md:h-[70px] text-2xl text-center border-[1px] duration-300 border-transparent  border-zinc-600 md:border-zinc-700 hover:bg-indigo-600
               bg-zinc-900   mt-10"
             >
               Beli {selectedProduct.harga}
             </button>
 
             <button
-              class="w-[100%] rounded-lg h-[70px] text-2xl text-center border-[1px] duration-300 hover:border-transparent border-zinc-600 md:border-zinc-700  hover:bg-indigo-600
+              class="w-[100%] rounded-lg h-[50px] md:h-[70px] text-2xl text-center border-[1px] duration-300 hover:border-transparent border-zinc-600 md:border-zinc-700  hover:bg-indigo-600
                 mt-5 bg-zinc-800"
             >
               + Keranjang

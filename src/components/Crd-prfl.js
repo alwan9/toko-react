@@ -1,17 +1,11 @@
 import React from "react";
-import Gopay from "./../img/payment/gopay.png";
-import Alfa from "./../img/payment/alfa.png";
-import Indo from "./../img/payment/indo.png";
-import Spay from "./../img/payment/spay.png";
-import Ovo from "./../img/payment/ovo.png";
-import Bri from "./../img/payment/bri.png";
 
 export default function Profile(props) {
   return (
     <>
       {/* card */}
-      <div className=" mt-[3%] md:mt-[15%]  md:mx-[2%] px-4 py-2">
-        <div className="bg-zinc-900 border-[1px] px-5  py-3  border-zinc-700 rounded-lg">
+      <div className=" mt-[3%] md:mt-[15%]   px-4 py-2">
+        <div className="bg-zinc-900 border-[1px] px-5  py-10  border-zinc-700 rounded-lg">
           <div className="flex items-center">
             <img src={props.image} />
             <div className="font-bold ml-4 text-2xl">{props.judul}</div>
@@ -23,13 +17,13 @@ export default function Profile(props) {
               <div className="my-2 text-lg font-bold"> {props.j2}</div>
               <div className="my-2 text-zinc-400"> {props.b2}</div>
               <div className="my-2 text-zinc-400"> {props.b3}</div>
-              <select>
-                <option>
-                  <img src={Gopay} />
-                  Gopay
-                </option>
-              </select>
             </p>
+            {/* <select className="text-zinc-50 w-[100%] h-[50px] bg-zinc-700 px-2 rounded-lg">
+              <option>
+                <img src={Gopay} />
+                Gopay
+              </option>
+            </select> */}
           </div>
         </div>
       </div>
