@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/store/static/css/main.83f3194f.css",
-    "main.js": "/store/static/js/main.45201d7b.js",
+    "main.css": "/store/static/css/main.2e1f04c9.css",
+    "main.js": "/store/static/js/main.e56d25fb.js",
     "static/js/787.092224b8.chunk.js": "/store/static/js/787.092224b8.chunk.js",
     "static/media/bg.png": "/store/static/media/bg.24dea602eb85d0d8b324.png",
     "static/media/header1.png": "/store/static/media/header1.5eccb086808099e4ac11.png",
@@ -54,16 +54,17 @@
     "static/media/ROG Strix GL10CS.png": "/store/static/media/ROG Strix GL10CS.56ceba1555c0831a8935.png",
     "static/media/awh.png": "/store/static/media/awh.84ba8a1e64848794cd98.png",
     "static/media/ROG Z11 Case Mini ITX.png": "/store/static/media/ROG Z11 Case Mini ITX.745a7c0e0915c0ebd698.png",
+    "static/media/paymen.png": "/store/static/media/paymen.00af56c9f0b28dd1b836.png",
     "static/media/logo.png": "/store/static/media/logo.0e66de7e2b6a94969ea4.png",
-    "static/media/close.svg": "/store/static/media/close.1924c247fc6c6370306e60e2ac8a7103.svg",
     "index.html": "/store/index.html",
+    "static/media/close.svg": "/store/static/media/close.1924c247fc6c6370306e60e2ac8a7103.svg",
     "static/media/burger.svg": "/store/static/media/burger.ab1dfb3bb5a17affa8b0a1bb03ad74f1.svg",
-    "main.83f3194f.css.map": "/store/static/css/main.83f3194f.css.map",
-    "main.45201d7b.js.map": "/store/static/js/main.45201d7b.js.map",
+    "main.2e1f04c9.css.map": "/store/static/css/main.2e1f04c9.css.map",
+    "main.e56d25fb.js.map": "/store/static/js/main.e56d25fb.js.map",
     "787.092224b8.chunk.js.map": "/store/static/js/787.092224b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.83f3194f.css",
-    "static/js/main.45201d7b.js"
+    "static/css/main.2e1f04c9.css",
+    "static/js/main.e56d25fb.js"
   ]
 }
