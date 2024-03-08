@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Product from "./pages/Product";
 import Detail from "./pages/Detail";
-import NotFound from "./components/notFound.js";
+import NotFound from "./components/NotFound.js";
 import Cart from "./pages/Cart.jsx";
 import Profile from "./pages/Profile.jsx";
 
