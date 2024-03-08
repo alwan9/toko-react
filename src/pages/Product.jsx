@@ -30,7 +30,7 @@ export default function Produk() {
       <header className="h-[250px] md:h-[500px] pt-16 md:pt-20 ">
         <img className="w-[100%] px-5 lg:px-36 mt-5 lg:mt-10" src={Judul} />
         <h1 className=" text-center hidden lg:block text-xl md:text-3xl font-light lg:text-3xl  lg:px-36">
-          ASUS ROG menawarkan produk-produk terbaik dengan performa tinggi,
+          Gaming Store menawarkan produk-produk terbaik dengan performa tinggi,
           inovasi canggih, dan desain yang memukau dalam dunia perangkat gaming.
         </h1>
         <input

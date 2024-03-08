@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import { useParams, Link } from "react-router-dom";
-import Order from "../components/itemsOrder";
+import Order from "../components/ItemsOrder";
 import Bayar from "../components/Bayar";
 
 export default function Cart(params) {

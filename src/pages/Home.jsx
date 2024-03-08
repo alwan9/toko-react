@@ -31,8 +31,8 @@ export default function Home() {
           <div className="ml-[7%]">
             <img src={Judul} className="w-[75%] md1:w-[50%] mt-16 md:mt-0" />
             <h1 className=" text-2xl md:text-3xl font-light lg:text-2xl mt-5 w-[80%]">
-              ASUS ROG menghadirkan kombinasi luar biasa antara performa tinggi
-              dan desain inovatif dalam dunia gaming.
+              Gaming Store menghadirkan kombinasi luar biasa antara performa
+              tinggi dan desain inovatif dalam dunia gaming.
             </h1>
           </div>
         </div>
@@ -114,7 +114,7 @@ export default function Home() {
         <div className=" md:ml-20 text-base sm:text-2xl md:text-4xl lg:text-5xl pb-[10%]">
           <div className="font-light text-center md:text-left md:mt-36">
             <span className="font-bold ">Diskon 50%</span> dengan menggunakan
-            metode pembayaran Cash di Asuss store Purwokerto
+            metode pembayaran Cash di Gaming store Purwokerto
           </div>
           <div className="w-[100%] md:w-[300px] h-[5px] rounded-xl my-5 bg-indigo-600"></div>
           <Button />
@@ -124,7 +124,7 @@ export default function Home() {
       {/* kategori */}
 
       <div className="flex px-7 md:px-20 mt-[7%] justify-between items-center my-20">
-        <h3 className="font-bold text-4xl md:text-5xl">Asus Product</h3>
+        <h3 className="font-bold text-4xl md:text-5xl">Gaming Product</h3>
       </div>
       <div className="mb-[30%]">
         <div className="grid gap-2 md:gap-5 grid-cols-3 px-7 md:px-20  ">
