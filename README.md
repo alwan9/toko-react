@@ -1,4 +1,7 @@
-# APLIKASI TOKO GAMINGG BY ALWAN
+# APLIKASI TOKO GAMING BY ALWAN FRONT END ONLY
+
+Menggunakan React. Hanya Tampilan Front end dengan Data Api Sederhana
+Menggunakan Tailwind dan Javascript
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
